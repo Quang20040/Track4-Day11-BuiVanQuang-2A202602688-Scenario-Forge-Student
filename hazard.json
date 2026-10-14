@@ -1,0 +1,31 @@
+{
+  "format": "avsim-studio/1",
+  "params": {
+    "civil": true,
+    "cutGap": 12.0,
+    "pedGap": 4.5,
+    "pedLook": 1,
+    "cutT0": 6.5,
+    "pedT0": 11.0,
+    "busGo": 17.0
+  },
+  "policy": {},
+  "hazards": [
+    {
+      "type": "ped",
+      "x": 200.0,
+      "side": "S",
+      "v": 2.1,
+      "t0": 0.0,
+      "trig": 40.0
+    }
+  ],
+  "ego": "planner",
+  "space": {
+    "h0_x": [185.0, 215.0],
+    "h0_v": [1.8, 2.4],
+    "h0_trig": [36.0, 48.0]
+  },
+  "exposure": 0.015,
+  "why": "Tình huống người đi bộ băng qua đường bất ngờ ngoài vạch (mid-block jaywalking) tại đoạn đường thẳng x in [185, 215] m, nơi xe ta đã qua vạch đi bộ hợp lệ (x=122 m) và đang tăng tốc trở lại vận tốc hành trình v0=12.5 m/s. Vận tốc đi bộ v in [1.8, 2.4] m/s phản ánh người đi bộ vội vã băng đường theo nghiên cứu FHWA/HCM. Khoảng kích hoạt trig in [36, 48] m khi xe tiến gần. Tần suất exposure=0.015 (1.5% số chuyến đi đô thị dựa trên dữ liệu Naturalistic Driving Study SHRP2 và NHTSA Pedestrian Crash Data)."
+}
